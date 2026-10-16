@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gulabi Loops — Handmade Crochet Luxe</title>
+<meta name="description" content="Handmade crochet keychains, bag charms, hair clips, headbands and bracelets from Pakistan.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧶</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#FFFBF3;--butter:#FFE7A0;--butter2:#FFF4CF;--pink:#F6B5C6;--pink2:#FCE3EA;--wine:#5E1B36;--gold:#B98A3E;--ink:#3A2430;--r:22px}
+@media(prefers-color-scheme:dark){:root{--ivory:#FFFBF3;--ink:#3A2430}}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font:16px/1.6 'DM Sans',sans-serif;background:var(--ivory);color:var(--ink)}
+h1,h2,h3,.logo{font-family:'Cormorant Garamond',serif;color:var(--wine);font-weight:600}
+a{color:inherit}img{display:block;max-width:100%}
+header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:12px 5vw;background:rgba(255,251,243,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--butter)}
+.logo{display:flex;align-items:center;gap:10px;font-size:1.7rem;text-decoration:none;font-style:italic}
+.logo svg{width:38px;height:38px}
+nav{display:flex;gap:22px;align-items:center}nav a{text-decoration:none;font-weight:500}
+nav a:hover{color:var(--gold)}
+.cartbtn{background:var(--wine);color:#fff;border:0;border-radius:99px;padding:9px 18px;font:700 .95rem 'DM Sans';cursor:pointer}
+.cartbtn:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:4vw;align-items:center;padding:6vw 5vw;background:radial-gradient(circle at 85% 20%,var(--butter) 0,transparent 45%),radial-gradient(circle at 5% 90%,var(--pink2) 0,transparent 45%)}
+.hero h1{font-size:clamp(2.6rem,6vw,5rem);line-height:1.02;margin-bottom:18px}
+.hero h1 i{color:var(--gold)}
+.hero p{max-width:46ch;margin-bottom:26px;font-size:1.08rem}
+.btn{display:inline-block;background:var(--wine);color:#fff;text-decoration:none;border:0;border-radius:99px;padding:14px 30px;font:700 1rem 'DM Sans';cursor:pointer}
+.btn.alt{background:var(--butter);color:var(--wine);margin-left:10px}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.collage img{width:100%;height:100%;object-fit:cover;border-radius:var(--r);border:5px solid #fff;box-shadow:0 12px 30px rgba(94,27,54,.15)}
+.collage .a{grid-row:span 2;aspect-ratio:3/4.4}.collage .b,.collage .c{aspect-ratio:1}
+.strip{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 38px;background:var(--wine);color:var(--butter);padding:14px 5vw;font-weight:500;text-align:center}
+section{padding:70px 5vw}
+.head{text-align:center;margin-bottom:34px}.head h2{font-size:clamp(2rem,4vw,3rem)}.head p{opacity:.75}
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:30px}
+.chip{border:1.5px solid var(--pink);background:#fff;color:var(--wine);border-radius:99px;padding:7px 18px;font:500 .92rem 'DM Sans';cursor:pointer}
+.chip.on{background:var(--pink);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:24px}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--butter);display:flex;flex-direction:column;transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card img{aspect-ratio:1;width:100%;object-fit:cover}
+.card div{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:1.3rem;line-height:1.15}.card small{opacity:.7;flex:1}
+.price{font-weight:700;color:var(--gold);font-size:1.1rem}
+.card button{margin-top:8px;background:var(--pink);color:var(--wine);border:0;border-radius:99px;padding:10px;font:700 .95rem 'DM Sans';cursor:pointer}
+.card button:hover{background:var(--butter)}
+.about{background:linear-gradient(135deg,var(--butter2),var(--pink2));display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:center}
+.about img{border-radius:var(--r);border:6px solid #fff;aspect-ratio:4/3;object-fit:cover;width:100%}
+.about h2{font-size:2.6rem;margin-bottom:12px}
+.offer{background:var(--wine);color:#fff;text-align:center;border-radius:var(--r);padding:34px;margin:0 5vw 60px}
+.offer h2{color:var(--butter)}.offer b{background:var(--butter);color:var(--wine);padding:2px 12px;border-radius:8px}
+footer{background:var(--wine);color:#f6e6ea;padding:44px 5vw;display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between}
+footer h3{color:var(--butter)}footer a{display:block}
+.ov{position:fixed;inset:0;background:rgba(58,36,48,.5);display:none;z-index:50;justify-content:flex-end}
+.ov.open{display:flex}
+.panel{background:var(--ivory);width:min(480px,100%);height:100%;overflow:auto;padding:22px;animation:sl .25s}
+@keyframes sl{from{transform:translateX(40px);opacity:0}}
+@media(prefers-reduced-motion:reduce){.panel{animation:none}.card{transition:none}html{scroll-behavior:auto}}
+.panel h2{font-size:2rem;margin-bottom:14px;display:flex;justify-content:space-between}
+.x{background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--wine)}
+.row{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--butter)}
+.row img{width:58px;height:58px;border-radius:12px;object-fit:cover}.row .t{flex:1;line-height:1.25}
+.q{display:flex;align-items:center;gap:8px;margin-top:4px}.q button{width:26px;height:26px;border-radius:50%;border:1px solid var(--pink);background:#fff;cursor:pointer}
+.sum{margin:16px 0;display:grid;gap:4px}.sum div{display:flex;justify-content:space-between}.tot{font-weight:700;font-size:1.2rem;color:var(--wine)}
+label{display:block;font-weight:500;margin:10px 0 3px;font-size:.92rem}
+input,select,textarea{width:100%;padding:11px 14px;border:1.5px solid var(--pink);border-radius:12px;font:inherit;background:#fff}
+.cp{display:flex;gap:8px}.cp button{white-space:nowrap}
+.pay{background:var(--butter2);border-radius:12px;padding:12px;margin-top:10px;font-size:.92rem;display:none}
+.msg{font-size:.88rem;margin-top:4px}.ok{color:#1d7a46}.bad{color:#b3261e}
+.full{width:100%;margin-top:16px}
+.wa{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;border-radius:99px;padding:12px 18px;text-decoration:none;font-weight:700;z-index:15;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+@media(max-width:760px){.hero,.about{grid-template-columns:1fr}nav a.h{display:none}.btn.alt{margin:10px 0 0}}
+.collage .a{border-radius:999px 999px 24px 24px}.collage .b{border-radius:24px 24px 999px 999px}.collage .c{border-radius:999px}
+.card>img{border-radius:999px 999px 0 0;margin:10px 10px 0;width:calc(100% - 20px)}
+.about img{border-radius:999px 999px 24px 24px;aspect-ratio:3/4;max-width:420px;margin:auto}
+.wave{display:block;width:100%;height:50px;margin-top:-1px}
+.gal{overflow:hidden;padding:60px 0;background:var(--pink2)}.gal h2{text-align:center;font-size:2.4rem;margin-bottom:22px}
+.track{display:flex;gap:16px;width:max-content;animation:mq 40s linear infinite}
+.track img{width:190px;height:250px;object-fit:cover;border-radius:999px 999px 20px 20px;border:4px solid #fff}
+.track img:nth-child(even){border-radius:20px 20px 999px 999px}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.track{animation:none;overflow:auto}}
+</style></head><body>
+
+<header>
+<a class="logo" href="#top" aria-label="Gulabi Loops home">
+<svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#FFE7A0"/><circle cx="32" cy="32" r="21" fill="#F6B5C6"/><path d="M14 36c8-14 20-14 28-2s8 8 10-2M18 44c10-10 18-8 26 0M20 28c8 6 16 6 24-2" fill="none" stroke="#5E1B36" stroke-width="2.4" stroke-linecap="round"/></svg>
+Gulabi Loops</a>
+<nav><a class="h" href="#shop">Shop</a><a class="h" href="#about">Our story</a><a class="h" href="#contact">Contact</a>
+<button class="cartbtn" id="openCart">Cart (<span id="cc">0</span>)</button></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+<div>
+<h1>Soft stitches,<br><i>luxury</i> details.</h1>
+<p>Handmade crochet keychains, bag charms, hair clips, headbands and pearl bracelets. Every piece is made to order in Pakistan, one loop at a time.</p>
+<a class="btn" href="#shop">Shop the collection</a><a class="btn alt" href="#offer">Get Rs 500 off</a>
+</div>
+<div class="collage"><img class="a" data-i="189664" alt="Crochet roses on pearl bracelets"><img class="b" data-i="189659" alt="Cherry bow keychain"><img class="c" data-i="189654" alt="Butterfly tassel keychains"></div>
+</div>
+<div class="strip"><span>Handmade to order</span><span>Delivery all over Pakistan</span><span>Cash on delivery available</span><span>Gift wrapping on request</span></div>
+
+<section id="shop">
+<div class="head"><h2>The collection</h2><p>Prices in Pakistani rupees (PKR)</p></div>
+<div class="filters" id="filters"></div>
+<div class="grid" id="grid"></div>
+</section>
+
+<div class="gal"><h2>Loved in every loop</h2><div class="track" id="track"></div></div>
+<div class="offer" id="offer" style="margin-top:60px"><h2>Welcome gift</h2><p>Use code <b>DC500</b> at checkout and get Rs 500 off orders of Rs 1,500 or more.</p></div>
+
+<section class="about" id="about">
+<img data-i="189663" alt="Crochet rose scrunchies in warm light">
+<div><h2>Made slowly, made with love</h2><p>Gulabi Loops began with one hook and a ball of yarn. Today we make rose scrunchies, pearl bracelets, bow keychains and more, in colours that feel like butter, blush and cream. Want a different colour or a custom name charm? Message us and we will make it for you.</p></div>
+</section>
+</main>
+
+<footer id="contact">
+<div><h3>Gulabi Loops</h3><p>Handmade crochet luxe.<br>Made in Pakistan.</p></div>
+<div><h3>Contact</h3><a id="fwa" href="#">WhatsApp</a><a id="fig" href="#" target="_blank" rel="noopener">Instagram</a><a id="fem" href="#">Email</a></div>
+<div><h3>Payments</h3><p>Cash on delivery<br>Easypaisa</p></div>
+</footer>
+<a class="wa" id="wafloat" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+
+<div class="ov" id="cartOv"><div class="panel" role="dialog" aria-label="Your cart"><h2>Your cart <button class="x" data-close aria-label="Close">×</button></h2><div id="items"></div><div id="cartFoot"></div></div></div>
+
+<div class="ov" id="coOv"><div class="panel" role="dialog" aria-label="Checkout"><h2>Checkout <button class="x" data-close aria-label="Close">×</button></h2>
+<form id="form">
+<label for="nm">Full name</label><input id="nm" name="name" required>
+<label for="ph">Phone / WhatsApp number</label><input id="ph" name="phone" type="tel" required placeholder="03XX XXXXXXX">
+<label for="em">Email (optional)</label><input id="em" name="email" type="email">
+<label for="ct">City</label><input id="ct" name="city" required>
+<label for="ad">Full address</label><textarea id="ad" name="address" rows="2" required></textarea>
+<label for="cd">Discount code</label>
+<div class="cp"><input id="cd" placeholder="DC500"><button type="button" class="btn" id="apply" style="padding:10px 18px">Apply</button></div><div class="msg" id="cmsg"></div>
+<label for="pm">Payment method</label>
+<select id="pm" name="payment"><option>Cash on delivery</option><option>Easypaisa</option></select>
+<div class="pay" id="payinfo"></div>
+<div id="tidw" style="display:none"><label for="tid">Transaction ID (TID) after payment</label><input id="tid" name="tid"></div>
+<div class="sum" id="sum2"></div>
+<button class="btn full" type="submit" id="place">Place order</button>
+<p class="msg" id="omsg"></p>
+</form></div></div>
+
+<script>const IMG={"189654": "data:image/jpeg;base64,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
